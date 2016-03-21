@@ -1,0 +1,56 @@
+@import "../base/base.css";
+@import "../moudle/app/good_list.css";
+@import "../moudle/app/search_plug.css";
+/*没有数据*/
+
+.title {
+    padding-left:10px;
+    margin-bottom:-10px;
+    background-color: transparent;
+    color: #666;
+    /*border-bottom: 1px solid #ccc;*/
+}
+.title > em{
+    color:#dd0045;
+}
+.goods-list-wraper{
+    padding-bottom:10px;
+}
+/*搜索结果空*/
+.no-good{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    left:0;
+    top:50%;
+    margin-top:-150px;
+    padding:30px 10px 0 10px;
+    font-size: 16px;
+}
+.no-good > i{
+    display: inline-block;
+    width: 94px;
+    height: 105px;
+}
+.no-good > p{
+    color: #666;
+    margin-top: 10px;
+}
+.no-good > a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #dd0045;
+    margin-top: 30px;
+}
+.no-good > i{
+    background-image: url(../../images/icon/nogood.png);
+    background-size: contain;
+}
+.no-good > i{
+    background-image: url(../../images/icon/nosearch.png);
+    background-size: contain;
+}

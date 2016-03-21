@@ -1,0 +1,96 @@
+@import "../base/base.css";
+@import "../moudle/app/good_list.css";
+.brand-detail-wraper{
+    /*background-color:#fff;*/
+    /*color:#818181;*/
+    /*margin:15px;*/
+    /*border: 1px solid #ccc;*/
+    /*padding:10px;*/
+    /*font-size: 14px;*/
+}
+.brand-info-wraper{
+    font-size: 12px;
+}
+.brand-info-wraper img{
+    min-height: 100px;
+}
+.brand-info-wraper .brand-info {
+    margin-left:90px;
+    padding-top:10px;
+}
+.brand-info > p{
+    height: 20px;
+    line-height: 20px;
+}
+.brand-info > p.brand-name{
+    font-size: 14px;
+    color: #333;
+}
+.brand-explain{
+    font-size: 12px;
+    background-color: #fff;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    color: #999;
+}
+.title {
+    background-color: #fff;
+    color: #fa501f;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+}
+.title > em{
+    color:#fa501f;
+}
+.goods-list-wraper{
+    padding-bottom:10px;
+}
+.no-good{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    left:0;
+    top:50%;
+    margin-top:-150px;
+    padding:30px 10px 0 10px;
+    font-size: 16px;
+}
+.no-good > i{
+    display: inline-block;
+    width: 94px;
+    height: 105px;
+}
+.no-good > p{
+    color: #666;
+    margin-top: 10px;
+}
+.no-good > a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #dd0045;
+    margin-top: 30px;
+}
+.no-good > i{
+    background-image: url(../../images/icon/nogood.png);
+    background-size: contain;
+}
+.no-good > i{
+    background-image: url(../../images/icon/nosearch.png);
+    background-size: contain;
+}
+.detail-des {
+    padding: 25px 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}

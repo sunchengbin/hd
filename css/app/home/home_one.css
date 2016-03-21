@@ -1,0 +1,62 @@
+@import "../../base/base.css";
+@import "../../moudle/app/search_plug.css";
+html,body,.wraper{
+    background-color: #fff;
+}
+.hot-good-wraper{
+    height: 180px;
+}
+.good-one{
+    width: 45%;
+    float: left;
+    height: 180px;
+    background:url(http://s.hdour.com/images/act/good_1.png) no-repeat center bottom #fff4eb;
+    background-size: contain;
+}
+.good-next{
+    margin-left: 45%;
+}
+.good-two{
+    /*width: 50%;*/
+    height: 90px;
+    background:url(http://s.hdour.com/images/act/good_2.png) no-repeat right bottom #fffdeb;
+    background-size: contain;
+}
+.good-next-n{
+    height: 90px;
+}
+.good-three{
+    float:left;
+    width: 50%;
+    height: 90px;
+    background:url(http://s.hdour.com/images/act/good_3.png) no-repeat right bottom #fff8ec;
+    background-size: contain;
+}
+.good-four{
+    float:left;
+    width: 50%;
+    height: 90px;
+    background:url(http://s.hdour.com/images/act/good_4.png) no-repeat right bottom #fffef7;
+    background-size: contain;
+}
+.hot-good-wraper a{
+    padding:5px 0 0 10px;
+}
+.hot-good-wraper a p{
+    font-size: 12px;
+}
+.hot-good-wraper a p.good-price{
+    font-size: 16px;
+}
+.hot-good-wraper a p.good-price em{
+    font-size: 12px;
+}
+.hot-good-wraper a p em.bk{
+    padding: 0 2px;
+}
+.good-price{
+    color: #dd0045;
+}
+.one-act{
+    margin-top:10px;
+}

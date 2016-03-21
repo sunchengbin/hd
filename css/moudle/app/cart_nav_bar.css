@@ -1,0 +1,62 @@
+.cart-nav{
+    position: fixed;
+    bottom:50px;
+    left: 0;
+    width: 100%;
+    background-color: #595959;
+    font-size: 14px;
+    color: #fff;
+    height: 44px;
+}
+
+
+.cart-nav > .cart-nav-block{
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    margin-left:10px;
+
+}
+.cart-nav > .cart-nav-block i{
+    margin-right:5px;
+}
+.cart-nav-block i:not(.radio-i){
+    /*color: #dd0045;*/
+    /*margin-left:5px;*/
+}
+.cart-nav .radioed-i .radio-i {
+    color: #dd0045;
+}
+.cart-nav .radio-i{
+    color: #595959;
+}
+.cart-nav > a.cart-nav-block{
+    float: right;
+    font-size: 1rem;
+    padding: 0 20px;
+    background-color: #dd0045;
+    color: #fff;
+    min-width: 100px;
+    text-align: center;
+}
+.cart-nav > a.cart-nav-block em{
+    font-size: 12px;
+}
+.cart-sum-wraper{
+    display: inline-block;
+    float: left;
+    margin-left: 40px;
+    height: 44px;
+}
+.cart-nav-block:nth-child(2){
+    font-size: 16px;
+    margin-left:40px;
+}
+.cart-sum-wraper .cart-nav-block:nth-child(1){
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 6px;
+}
+.cart-sum-wraper .cart-nav-block:nth-child(2){
+    font-size: 12px;
+}

@@ -1,0 +1,64 @@
+@import "buy_plug.css";
+.order-good-list{
+
+}
+.order-good-list li{
+    padding:20px 10px;
+    font-size: 14px;
+    background-color: #fff;
+    margin-bottom:10px;
+}
+/*.order-good-list li:last-child{*/
+    /*border-bottom: none;*/
+/*}*/
+.order-good-list li .img{
+    width: 60px;
+    height: 60px;
+    padding-top:0;
+    margin-top:10px;
+}
+.good-info-wraper{
+    margin-left:92px;
+}
+.good-info-wraper > p{
+    font-size: 12px;
+}
+.good-info-wraper > p:nth-child(1){
+
+    line-height: 1.3;
+    max-height: 30px;
+    overflow: hidden;
+}
+.good-info-wraper > p:nth-child(2){
+    height: 20px;
+    line-height: 20px;
+    margin: 6px 0 4px;
+}
+.good-info-wraper p > em{
+    color: #dd0045;
+    font-size: 14px;
+}
+.good-info-wraper p > i{
+    /*font-size: 12px;*/
+    color: #666;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.good-info-wraper p > i.no-through{
+
+    text-decoration: none;
+
+}
+.good-info-wraper p > span{
+    margin-left: 10px;
+}
+
+.good-info-wraper .good-del-btn{
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    padding: 0 15px;
+    float: right;
+}

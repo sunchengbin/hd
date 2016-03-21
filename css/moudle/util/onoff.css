@@ -1,0 +1,49 @@
+.on-off{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 20px;
+    background-color: #dd0045;
+    border:1px solid #dd0045;
+    -webkit-transition: background-color,border-color .1s ease-in .1s;
+    -moz-transition: background-color,border-color .1s ease-in .1s;
+    -ms-transition: background-color,border-color .1s ease-in .1s;
+    -o-transition: background-color,border-color .1s ease-in .1s;
+    transition: background-color,border-color .1s ease-in .1s;
+}
+.on-off i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: .1rem solid #dd0045;
+    margin-top: -1px;
+    margin-left: -1px;
+    transition:.1s;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.off{
+    background-color: #ccc;
+    border:1px solid #bbb;
+    -webkit-transition: background-color,border-color .1s ease-in .1s;
+    -moz-transition: background-color,border-color .1s ease-in .1s;
+    -ms-transition: background-color,border-color .1s ease-in .1s;
+    -o-transition: background-color,border-color .1s ease-in .1s;
+    transition: background-color,border-color .1s ease-in .1s;
+}
+.off i{
+    border-color: #bbb;
+    transition:.1s;
+    -webkit-transform: translate(20px, 0);
+    -moz-transform: translate(20px, 0);
+    -ms-transform: translate(20px, 0);
+    -o-transform: translate(20px, 0);
+    transform: translate(20px, 0);
+}

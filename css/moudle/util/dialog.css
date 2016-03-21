@@ -1,0 +1,44 @@
+.dialog-wraper{
+    position:absolute;
+    background-color : #fff;
+    border-radius: 5px;
+}
+.dialog-body,.dialog-top,.dialog-footer{
+    padding:10px;
+
+}
+.dialog-top{
+    border-bottom: 1px solid #f1f1ed;
+}
+
+.dialog-body{
+    overflow:auto;
+}
+.dialog-footer{
+    text-align: center;
+}
+.dialog-footer a{
+    display: inline-block;
+    padding: 8px 5px;
+    border-radius: 3px;
+    background-color: #dd0045;
+    color: #fff;
+    width: 40%;
+}
+.dialog-footer a.cart-btn{
+    background-color: #dd0045;
+}
+.dialog-body-p{
+    text-align: center;
+}
+.cf-btn{
+    margin-right:10px;
+}
+.dialog-cover{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0,0,0,.5);
+}

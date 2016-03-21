@@ -1,0 +1,118 @@
+@import "../base/base.css";
+@import "../moudle/app/order_good_list.css";
+@import "../moudle/app/cart_nav_bar.css";
+.wraper{
+    padding-bottom: 93px;
+}
+.go-top{
+    bottom:105px;
+}
+/*购物车空*/
+.no-good{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    left:0;
+    top:50%;
+    margin-top:-150px;
+    padding:30px 10px 0 10px;
+    font-size: 16px;
+}
+.no-good > i{
+    display: inline-block;
+    width: 94px;
+    height: 105px;
+}
+.no-good > p{
+    color: #666;
+    margin-top: 10px;
+}
+.no-good > a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #dd0045;
+    margin-top: 30px;
+}
+.no-good > i{
+    background-image: url(../../images/icon/nogood.png);
+    background-size: contain;
+}
+/*有商品的*/
+.act-msg-wraper{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+}
+.order-good-list-wraper{
+    margin-top: 10px;
+    /*padding: 0 5px 0 15px;*/
+    /*background-color: #fff;*/
+}
+.shop-title{
+    padding-left:10px;
+    padding-right: 10px;
+    border-top: 1px solid #f1f1ed;
+}
+.shop-title-wraper{
+    border-bottom: 1px solid #f1f1ed;
+}
+.shop-title > i{
+    margin-left:10px;
+    color: #dd0045;
+    font-size: 12px;
+}
+.shop-title > i a{
+    font-size: 12px;
+    color: #1f8bfb;
+}
+.shop-title a > i{
+    font-size: 13px;
+}
+.order-good-list-wraper .good-info-wraper{
+    /*margin-left:130px;*/
+}
+.order-good-list-wraper .checkbox-i{
+    margin-top:40px;
+    margin-right:10px;
+}
+.title:nth-child(2) > i{
+    color: #dd0045;
+}
+.price-info-wraper{
+    height: 40px;
+    line-height: 40px;
+    background-color: #ddd;
+    padding:0 15px;
+    font-size:14px;
+}
+.price-info-wraper span > i{
+    color: #dd0045;
+    margin-left: 5px;
+}
+.act-msg-wraper a{
+    height: 44px;
+    line-height: 44px;
+    background-color: #fff;
+    padding:0 10px;
+    font-size: 12px;
+    color: #dd0045;
+}
+.act-msg-wraper a .icon,.act-msg-wraper a span{
+    font-size: 12px;
+    color: #1f8bfb;
+}
+
+.act-msg-wraper i:not(.icon){
+    color: #dd0045;
+}
+.radio-wraper{
+    min-height: 80px;
+    line-height: 80px;
+    padding-right:10px;
+
+}

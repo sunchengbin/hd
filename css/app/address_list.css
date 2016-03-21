@@ -1,0 +1,108 @@
+@import "../base/base.css";
+/*@import "../moudle/app/order_common.css";*/
+.address-wraper{
+    /*font-size:14px;*/
+    position: relative;
+}
+.edit-address-wraper > li{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #666;
+}
+.buyer-address{
+    padding: 5px 15px;
+    min-height: 40px;
+    background-color: #fff;
+}
+.address-info{
+    margin-left:35px;
+    margin-right:60px;
+}
+.address-info li{
+    height: 20px;
+    line-height: 20px;
+}
+.address-info li.address-info-li{
+    padding: 3px 0;
+    /*line-height: normal;*/
+    height:inherit;
+    word-wrap: break-word;
+}
+.address-info li.address-img{
+    line-height: normal;
+    height:inherit;
+}
+.address-img .img{
+    width: 60px;
+    padding: 0;
+    height: 60px;
+    float: left;
+    margin-right: 5px;
+}
+.address-wraper .edit-btn{
+    border-left: 1px solid #ccc;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-left:15px;
+    color: #666;
+}
+.address-wraper i{
+    margin-top:20px;
+}
+.add-new{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #dd0045;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 1rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom:0;
+}
+.address-wraper .bb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/*.buyer-address{*/
+    /*margin-top:15px;*/
+/*}*/
+/*.address-wraper{*/
+    /*font-size:14px;*/
+    /*position: relative;*/
+
+/*}*/
+/*.address-wraper .bb{*/
+    /*position: absolute;*/
+    /*right: 10px;*/
+    /*top: 14px;*/
+/*}*/
+/*.address-info{*/
+    /*margin-left:25px;*/
+/*}*/
+/*.address-info li{*/
+    /*margin-top:5px;*/
+    /*font-size: 12px;*/
+    /*color: #666;*/
+/*}*/
+/*.address-img{*/
+    /*padding: 0 0 5px;*/
+/*}*/
+
+/*.address-wraper{*/
+    /*padding:0 0 5px;*/
+/*}*/
+/*.address-wraper .img{*/
+    /*width: 65px;*/
+    /*height: 65px;*/
+    /*float:left;*/
+    /*margin-right:15px;*/
+    /*padding: 0;*/
+/*}*/

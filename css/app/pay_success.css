@@ -1,0 +1,92 @@
+@import "../base/base.css";
+@import "../moudle/app/order_good_list.css";
+@import "../moudle/app/nav_bar.css";
+@import "../moudle/app/order_common.css";
+.order-title:nth-child(1){
+    height: 40px;
+    line-height: 40px;
+    color:#999;
+    font-size: 12px;
+}
+.bw{
+    background-color: #fff;
+}
+.carry-time{
+    padding:15px 10px;
+    color:#666;
+    font-size: 12px;
+    background-color: #fff;
+    margin:10px 0;
+}
+.carry-time p{
+    height: 20px;
+    line-height: 20px;
+}
+.title{
+    padding:0 10px;
+}
+.address-wraper p{
+    color: #666;
+    padding:0 10px;
+}
+.address-wraper p.user-info{
+    padding:0 10px 0 30px;
+    height: 20px;
+    line-height: 20px;
+}
+.address-wraper p.address-info{
+    min-height: 20px;
+    line-height: 20px;
+}
+.address-icon{
+    margin-right:5px;
+}
+.address-wraper{
+    padding:15px 0;
+    font-size: 12px;
+}
+.service-wraper{
+    padding:20px 10px 55px 10px;
+    background-color: #fff;
+    border-top: 1px solid #f1f1ed;
+}
+.service-wraper h2{
+    font-size: 1rem;
+    margin-bottom:15px;
+}
+.service-wraper p{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+.service-wraper p i {
+    display: inline-block;
+    width: 23px;
+    height: 14px;
+    background: url(../../images/service/import.jpg) no-repeat;
+    background-size: contain;
+}
+.service-wraper p a{
+    color: #1f8bfb;
+}
+.service-wraper .img-box{
+    width: 135px;
+    height: 135px;
+    margin:30px auto 0;
+}
+.shoping{
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #dd0045;
+    bottom: 0;
+}
+.order-state-img{
+    /*margin:10px 0;*/
+    padding:15px 20px;
+    background-color: #fff;
+}

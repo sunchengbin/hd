@@ -1,0 +1,363 @@
+@import "../../../css/base/base.css";
+html { font-size: 10px; }
+body, td, input, textarea, option, select, button {
+    font-family: "Microsoft YaHei Regular";
+}
+html,body{
+    background-color: #fff;
+}
+/*@import "../../../css/moudle/app/good_list.css";*/
+/*home页*/
+.home-nav,.title-wraper,.good-wraper,.footer-wraper{
+    max-width: 1000px;
+    margin:0 auto;
+}
+.home-nav .home{
+    margin-top:5px;
+    width: 140px;
+}
+.home-a{
+    margin-left:140px;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.home-a a{
+    color: #666;
+    font-size: 1.4rem;
+}
+.home-a a.act{
+    color: #dd0045;
+}
+.home-a em{
+    margin:0 4%;
+    color: #e6e6e6;
+}
+
+.title-wraper,.title-wraper-c{
+    border-bottom:1px solid #d0d0d0;
+    position: relative;
+    height: 84px;
+}
+.title-wraper-c{
+    width: 240px;
+    margin:0 auto;
+}
+.title-wraper-c .title-line{
+    width:140px;
+}
+.title-line{
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    width: 170px;
+    height: 70px;
+    left: 50%;
+    top: 50px;
+    padding-top: 10px;
+    background-color: #fff;
+    text-align: center;
+    margin-left: -85px;
+}
+.title-line p{
+    color: #999;
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+.title-line h2{
+    font-size: 2.5rem;
+}
+.good-list{
+    margin-top:50px;
+    margin-left:-20px;
+}
+.good-list li{
+    float:left;
+    width: 33.33333%;
+    padding:20px 0 0 20px;
+}
+.good-list li a{
+    background-color: #fff;
+    border:1px solid #e8e8e8;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow:0 0 5px 3px #e8e8e8;
+    box-shadow:0 0 5px 3px #e8e8e8;
+    padding-bottom: 20px;
+}
+.good-info{
+    padding:0 15px;
+    color: #333333;
+}
+.good-price{
+    font-size: 30px;
+    margin-top:25px;
+}
+.good-price em{
+    font-weight: bold;
+    color: #dd0045;
+}
+.good-price span{
+    width: 90px;
+    height:36px;
+    line-height: 36px;
+    float:right;
+    text-align: center;
+    font-size: 18px;
+}
+.price{
+    margin-left:15px;
+    font-size: 16px;
+    color: #666;
+    text-decoration: line-through;
+}
+.footer{
+    padding:35px 0 25px;
+    background-color: #666;
+    color: #fff;
+    margin-top:80px;
+}
+.footer-left{
+    float:left;
+}
+.footer-right{
+    margin-left:50%;
+    text-align: right;
+}
+.footer-right p:not(:nth-child(11)){
+    margin-bottom: 5px;
+}
+.footer-href{
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.footer-href a{
+    color: #fff;
+}
+.footer-href em{
+    margin:0 10px;
+}
+.footer-p{
+    font-size: 12px;
+    color: #999;
+    margin-bottom:5px;
+}
+.wx-p{
+    margin-bottom:10px;
+}
+.wx-p em{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:10px;
+    width: 40px;
+    height: 40px;
+    background: url(../../../images/dnf/wx-bg.png) no-repeat 0 0;
+}
+/*联系我们*/
+.contact-wraper{
+    width: 800px;
+    margin:0 auto 0;
+    padding-top:80px;
+}
+.txt-wraper{
+    padding-left:10px;
+}
+.cont-wraper em,.cont-p-wraper em{
+    color: #dd0045;
+    font-size: 1.3rem;
+}
+.cont-wraper em.b-em{
+    color: #000;
+    font-weight: bold;
+}
+/*.point-p{*/
+    /*padding-left:10px;*/
+    /*background: url(../../../images/service/point.png) no-repeat 0 5px;*/
+/*}*/
+.cont-p-wraper{
+    line-height: 1.5;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+.txt-cont-p{
+    line-height: 1.5;
+}
+.cont-p-wraper li{
+    padding-left:4rem;
+    position: relative;
+}
+.cont-p-wraper li span{
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    left:1rem;
+    top:50%;
+    margin-top:-0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.ser-cont li span{
+    margin-top:-1.3rem;
+}
+.certified span{
+    background: url(../../../images/service/certified.png);
+    background-size: contain;
+}
+.quick span{
+    background: url(../../../images/service/quick.png);
+    background-size: contain;
+}
+.low span{
+    background: url(../../../images/service/low.png);
+    background-size: contain;
+}
+.refund span{
+    background: url(../../../images/service/refund.png);
+    background-size: contain;
+}
+.service span{
+    background: url(../../../images/service/ser_my.png);
+    background-size: contain;
+}
+.service-er span{
+    background: url(../../../images/service/ser_wx.png);
+    background-size: contain;
+}
+.service-phone span{
+    background: url(../../../images/service/ser_phone.png);
+    background-size: contain;
+}
+.cont-p-wraper li h2{
+    padding-top:15px;
+    font-size: 1.6rem;
+}
+.cont-p-wraper p{
+    color: #666;
+    font-size: 1.4rem;
+}
+.service-title{
+    padding-left:10px;
+    font-size: 2.4rem;
+    color: #dd0045;
+    padding-bottom:10px;
+}
+.ser-cont li{
+    margin-top:25px;
+}
+.service i{
+    display: inline-block;
+    width: 23px;
+    height: 14px;
+    background: url(../../../images/service/import.jpg) no-repeat;
+    background-size: contain;
+}
+.txt-cont p:nth-child(2){
+    padding-top:3px;
+}
+.ser-cont-txt {
+    text-align: center;
+    padding: 0 0 15px;
+    font-size: 14px;
+}
+.genuine-cont{
+    padding:0 0 10px 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color:#666;
+}
+ul.genuine-cont {
+    background-color: #fff;
+    border-radius: 50px;
+    padding:0;
+    margin-top:40px;
+    margin-bottom:100px;
+}
+
+.genuine-cont li{
+    padding:10px 10px 10px 0px;
+    width: 50%;
+    float: left;
+}
+.genuine-cont li:nth-child(1){
+    border-right:1px solid #e6e6e6;
+}
+.genuine-cont li div{
+    /*padding:15px 10px;*/
+    /*border:1px solid #dcdadc;*/
+    border-radius: 5px;
+}
+.title-wraper-t p{
+    font-size: 1.4rem;
+}
+.title-wraper-t p.g-title{
+    /*text-align: center;*/
+    font-size: 2rem;
+    font-weight: bold;
+}
+.g-icon{
+    float: left;
+    /*text-align: center;*/
+}
+.g-icon span{
+    display: inline-block;
+    margin:10px 0 0 20px;
+    width: 50px;
+    height: 50px;
+    background:url(../../../images/service/correct.png);
+    background-size: contain;
+}
+.genuine-cont li:nth-child(2) span{
+    background:url(../../../images/service/money.png);
+    background-size: contain;
+}
+.good-left{
+    float: left;
+}
+.good-right{
+    margin-left:600px;
+    text-align: center;
+    padding-top: 63px;
+}
+/*关于我们*/
+.about-wraper{
+    width: 810px;
+    margin:0 auto;
+    padding-top:50px;
+}
+.about-wraper .cont-wraper{
+    line-height: 1.5;
+}
+.about-wraper .cont-wraper p,.genuine-wraper .cont-wraper p{
+    text-align: center;
+    font-size: 1.6rem;
+}
+.about-wraper .cont-wraper p em,.genuine-wraper .cont-wraper p em{
+    font-size: 1.6rem;
+}
+.about-wraper .cont-p-wraper li{
+    float:left ;
+    height: 80px;
+    width: 50%;
+}
+.about-wraper .cont-p-wraper li:not(:nth-child(1)) h2{
+    padding-top:25px;
+}
+.genuine-wraper .title-wraper-c{
+    margin-bottom:50px;
+}
+.genuine-cont{
+    width: 810px;
+    margin:0 auto;
+}
+.genuine-wraper,.genuine-wraper .title-wraper-c .title-line{
+    background-color: #fff4f7;
+}
+.n-mt{
+    margin-top:0;
+}
+.title-wraper-t{
+    margin-left:85px;
+}
+.dialog-body{
+    padding:30px;
+}

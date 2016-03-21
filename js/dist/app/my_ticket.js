@@ -1,0 +1,1 @@
+define("app/my_ticket",function(){});

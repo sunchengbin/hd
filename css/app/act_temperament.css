@@ -1,0 +1,285 @@
+@import "../base/base.css";
+html,body{
+    background-color: #ffdfea;
+}
+html { font-size: 62.5%; }
+
+@media only screen and (min-width: 374px) {
+    html { font-size: 72%!important }
+}
+@media only screen and (min-width: 413px) {
+    html { font-size: 80%!important }
+}
+@media only screen and (min-width: 481px) {
+    html { font-size: 94%!important }
+}
+
+@media only screen and (min-width: 561px) {
+    html { font-size: 109%!important }
+}
+
+@media only screen and (min-width: 641px) {
+    html { font-size: 125%!important }
+}
+
+@media(orientation: landscape) and (min-width: 481px) {
+    html { font-size: 62.5% !important; }
+}
+.dialog-wraper{
+    font-size: 1.4rem;
+}
+.wraper{
+    padding-bottom: 0;
+    font-size: 1.4rem;
+}
+.user-info{
+    margin:10px 15px;
+    border:2px solid #fff;
+    border-radius: 10px;
+    background-color:#dd0045;
+    overflow: hidden;
+}
+/*未上传*/
+.user-logo{
+    float:left;
+    width: 55%;
+    border-right:2px solid #fff;
+    background-color: #ffdfea;
+    min-height: 180px;
+    padding:10px 0;
+    position: relative;
+}
+.user-logo img{
+    width: 70%;
+    margin: 0 auto 10px;
+    display: block;
+}
+.user-logoed img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -60px 0 0 -60px;
+}
+.user-logo p{
+    text-align: center;
+    color: #dd0045;
+    height: 20px;
+    line-height: 20px;
+}
+.user-rank{
+    margin-left:55%;
+    background-color:#dd0045;
+    padding:5px 0;
+}
+.user-rank-left{
+    width: 100px;
+    margin: 0 auto;
+    height: 70px;
+    background: url(../../images/act/ranking_bg.png) no-repeat center center;
+    background-size: contain;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+.user-rank-lefted{
+    padding-top: 0;
+    background-image: none;
+    height: auto;
+}
+.user-rank-lefted img{
+    width: 75px;
+    border-radius: 50%;
+}
+.user-rank-right h2{
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+}
+.user-rank-right p{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+.share-btn{
+    margin:0 15px;
+}
+.ranking-title{
+    padding: 5px 0 0;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.ranking-title a{
+    color: #dd0045;
+    text-decoration: underline;
+}
+.txt-cont{
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    padding:15px 15px 0;
+    margin:10px 12px;
+}
+.txt-cont span{
+    display: inline-block;
+    width: 45px;
+    height: 8px;
+    background: url(../../images/act/angle_top.png) no-repeat;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -22px;
+    background-size: cover;
+}
+.txt-cont > p{
+    color: #999;
+}
+.txt-cont > p em{
+    color: #333;
+}
+.txt-cont li{
+    padding:10px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.txt-cont li:last-child{
+    border-bottom: 0;
+}
+.txt-cont li img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float:left;
+}
+.txt-cont li div{
+    margin-left:45px;
+    height: 35px;
+    line-height: 35px;
+}
+.txt-cont li div em{
+    color: #dd0045;
+    margin-right: 15px;
+}
+.footer-p{
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #dd0045;
+    color: #fff;
+}
+.act-wraper > p{
+    margin-top:15px;
+    text-align: center;
+}
+.act-wraper > div > div{
+
+}
+.act-wraper > div em{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color: #dd0045;
+    color: #fff;
+    float:left;
+    text-align: center;
+    font-size: 1.2rem;
+    /*margin-top: 3px;*/
+}
+.act-wraper > div p{
+    margin-left: 25px;
+}
+.txt-d{
+    margin-bottom:5px;
+}
+.wx-er{
+    padding:10px 30px 10px;
+}
+.btn-wraper{
+    padding: 15px 15px 0;
+    text-align: center;
+}
+.btn-wraper a{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+}
+.left-btn{
+    background: url(../../images/act/left_btn.png) no-repeat;
+    background-size: contain;
+}
+.right-btn{
+    /*float:right;*/
+    background: url(../../images/act/right_btn.png) no-repeat;
+    background-size: contain;
+}
+.get-more{
+    margin:10px auto 0;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #dd0045;
+    border:1px solid #dd0045;
+    border-radius: 5px;
+}
+.txt-cont ul{
+    max-height: 200px;
+    overflow-y: auto;
+}
+.txt-cont ul.list-rank{
+    max-height: none;
+    overflow: hidden;
+}
+.user-rank {
+    /*margin-top: 15%;*/
+}
+.ranking-title {
+    padding: 5px 0 0;
+    text-align: center;
+    /* height: 30px; */
+    /* line-height: 30px; */
+}
+.ranking-title a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #dd0045;
+    border-radius: 5px;
+}
+.user-logo p{
+    height: initial;
+    line-height: initial;
+}
+.user-logo p a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #dd0045;
+    border-radius: 5px;
+}
+.i-join{
+    margin: 0 15px;
+}
+.i-join a{
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #dd0045;
+    border-radius: 5px;
+}

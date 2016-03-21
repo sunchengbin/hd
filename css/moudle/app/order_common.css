@@ -1,0 +1,52 @@
+.buyer-address .line{
+    height: 2px;
+    background: url(http://s.hdour.com/images/icon/address_line.jpg) repeat-x;
+}
+.shop-cart-wraper .title{
+    border-top: 1px solid #f1f1ed;
+    padding:0 10px;
+    color:#666;
+    font-size:12px;
+}
+.title:not(:nth-child(1)) > i {
+    color: #dd0045;
+}
+.good-info-wraper{
+    margin-left:70px;
+}
+.order-good-list li{
+    margin-bottom:0;
+    border-bottom:1px solid #f1f1ed;
+}
+.order-good-list li:last-child{
+    border:0;
+}
+.order-title {
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    font-size: 12px;
+    padding: 0 10px;
+    border-bottom: 1px solid #f1f1ed;
+}
+.buyer-address {
+    background-color: #fff9f2;
+}
+i.address-icon{
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    background: url(http://s.hdour.com/images/icon/addressicon.png) no-repeat center center;
+    background-size: contain;
+}
+.address-img{
+    padding: 5px 30px;
+}
+.address-img .img{
+    width: 60px;
+    background-image: url(http://s.hdour.com/images/icon/defaultimg.png);
+    height: 60px;
+    padding: 0;
+    margin-right: 5px;
+    float: left;
+}

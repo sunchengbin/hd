@@ -1,0 +1,137 @@
+/*/!*清楚弹窗的内边距*!/*/
+/*.dialog-body{*/
+    /*overflow: inherit;*/
+    /*padding: 0;*/
+/*}*/
+.buy-plug{
+    background-color: #fff;
+    padding:20px 0 10px;
+}
+.buy-plug > div{
+
+}
+.buy-plug > p{
+    padding: 10px 10px 0;
+    border-top: 1px solid #f0f0f0;
+}
+.buy-plug > p a{
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #dd0045;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+.buy-num{
+    height: 44px;
+    line-height: 44px;
+    padding: 0 15px;
+}
+.good-type > span{
+    float:left;
+}
+.good-type > span:not(.explain-tab){
+    margin-right:5px;
+    border: 1px solid #686868;
+    padding: 0 4px;
+    border-radius: 2px;
+    color: #686868;
+    line-height: 26px;
+}
+.explain-tab{
+    display: inline-block;
+    margin-right:10px;
+    color: #666;
+}
+.good-type > span.item-type-act{
+    border-color: #dd0045;
+    color: #dd0045;
+}
+.buy-plug .num-wraper{
+    position: relative;
+    padding: 0 30px 10px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #f1f1ed;
+    min-height: 85px;
+}
+.num-wraper .good-img{
+    width: 75px;
+    height: 75px;
+    float:left;
+}
+.num-info > p:first-child{
+    font-size: 14px;
+    margin-bottom:10px;
+}
+.num-info > p:nth-child(2){
+   font-size: 18px;
+    color: #dd0045;
+    /*margin-bottom:8px;*/
+}
+.num-info > p:last-child{
+    font-size: 12px;
+    color: #666;
+}
+.good-wrap{
+    width: 80px;
+    border: #f1f1ed 1px solid;
+}
+.good-num{
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    line-height: normal;
+}
+.good-num p{
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    border: 0;
+    text-align: center;
+    color: #999;
+    background-color: transparent;
+}
+/*.good-num input{*/
+    /*width: 40px;*/
+    /*height: 18px;*/
+    /*font-size: 12px;*/
+    /*border: 0;*/
+    /*outline: none;*/
+    /*display: block;*/
+    /*text-align: center;*/
+    /*color: #999;*/
+    /*background-color: transparent;*/
+/*}*/
+.good-num span{
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    line-height: 16px;
+    text-align: center;
+    color: #333;
+    background-color: #f8f8f8;
+}
+.good-move{
+    left:0;
+    top:0;
+}
+.good-add{
+    right:0;
+    top:0;
+}
+.good-num .iconfont{
+    font-size:14px;
+}
+.explain-msg{
+    margin-left:10px;
+    color:#dd0045;
+}
+.num-info{
+    margin-left:95px;
+}
+.buy-num .good-wrap{
+    margin-top:12px;
+}

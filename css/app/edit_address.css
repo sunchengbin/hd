@@ -1,0 +1,117 @@
+@import "../base/base.css";
+.wraper{
+    /*background-color: #fff;*/
+}
+.title{
+    color: #666;
+    padding:0 10px;
+    border-bottom: 1px solid #f1f1ed;
+    background-color: #fff;
+}
+.title input{
+    height: 20px;
+    line-height: 20px;
+    width: 80%;
+    font-size: 12px;
+    padding-left:5px;
+    color: #999;
+}
+.title .radio-i{
+    margin-right: 10px;
+}
+.msg-title{
+    height: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    color: #999;
+}
+.btn-wrapr{
+    background-color: #fff;
+    padding: 10px 0;
+}
+.del-btn,.save-btn{
+
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #dd0045;
+    border-radius: 5px;
+    color: #fff;
+    margin: 10px 15px 0;
+}
+.del-btn{
+    color: #dd0045;
+    border:1px solid #dd0045;
+    background-color: transparent;
+}
+.buyer-message-content textarea{
+    width: 100%;
+    height: 44px;
+    font-size: 12px;
+    resize: none;
+    padding: 5px 25px;
+    border-bottom: #f1f1ed 1px solid;
+}
+.buyer-message-content-ems textarea{
+    width: 100%;
+    height: 44px;
+    font-size: 12px;
+    resize: none;
+    padding: 5px 0;
+    border-bottom: #f1f1ed 1px solid;
+}
+.hotel-address{
+    padding: 10px 0 10px 25px;
+    border-bottom: 1px solid #f1f1ed;
+}
+.hotel-address > p{
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+}
+.hotel-address .hotel-address-img{
+    display: inline-block;
+    float: left;
+    margin-right:5px;
+    border:1px dashed #f1f1ed;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+}
+.hotel-address  a{
+    line-height: 60px;
+    text-align: center;
+    background-color: #fff;
+}
+.hotel-address  a i{
+    font-size: 60px;
+    color: #e4e4e4;
+}
+.address-edit-wraper .title{
+    font-size: 12px;
+    color: #666;
+    padding:0 25px;
+}
+.address-wraper,.air-title .address-edit-wraper{
+    padding:0 10px;
+    background-color: #fff;
+}
+.hide{
+    display: none;
+}
+.air-title{
+    height: auto;
+}
+.air-title .address-edit-wraper .img{
+    border-bottom:1px solid #f1f1ed;
+}
+.j_radio{
+    font-weight: bold;
+    color: #333;
+    font-size: 0.875rem;
+}
+.up-img-msg{
+    margin:10px 0 15px;
+    color: #999;
+    font-size: 12px;
+}

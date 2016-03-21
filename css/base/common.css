@@ -1,0 +1,383 @@
+/*常用*/
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/*gotop*/
+.go-top{
+    display: inline-block;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    bottom: 105px;
+    z-index: 103;
+    background: url(http://s.hdour.com/images/icon/gotop.png) no-repeat;
+    background-size:contain;
+}
+/*背景文字*/
+.bk{
+    display: inline-block;
+    background-color: #dd0045;
+    color: #fff;
+    /*height: 16px;*/
+    line-height: normal;
+    padding: 0 10px;
+    margin:0 5px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+/*线框背景*/
+.bb{
+    display: inline-block;
+    border: 1px solid #dd0045;
+    color: #dd0045;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size:12px;
+}
+/*tab*/
+.detail-tag{
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Chrome */
+    display: flex;
+    background-color: #fff;
+    border-top:1px solid #f1f1ed;
+    border-bottom:1px solid #f1f1ed;
+}
+.detail-tag a{
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 50%;
+    float: left;
+    /*height: 34px;*/
+    /*line-height: 34px;*/
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666;
+    position: relative;
+}
+.detail-tag a p{
+    height: 34px;
+    line-height: 34px;
+}
+.detail-tag a:nth-child(1) div,.detail-tag a:nth-child(1) p{
+    border-right:1px solid #f1f1ed;
+}
+.detail-tag .act p,.detail-tag .act div{
+    color: #dd0045;
+    border-bottom: 2px solid #dd0045;
+}
+/*最外层底部去除主菜单栏目的*/
+.wraper{
+    padding-bottom:61px;
+}
+/*通过背景来显示图片*/
+.img {
+    background-image: url(http://s.hdour.com/images/icon/defaultimg.png);
+    position: relative;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #efefef;
+}
+/*标题行*/
+.title{
+    height: 44px;
+    line-height: 44px;
+    font-size:0.875em;
+    color:#444;
+    background-color: #fff;
+}
+/*复选框*/
+.checkbox-i{
+    display: inline-block;
+    border: 1px solid #ccc;
+    line-height: normal;
+    text-align: center;
+    background-color: #fff;
+    color: #fff;
+}
+.checkboxed-i{
+    color: #dd0045;
+}
+/*单选框*/
+.radio-i{
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 18px;
+    /*padding:2px;*/
+}
+.radioed-i .radio-i{
+    display: inline-block;
+    color: #dd0045;
+    border-color: #dd0045;
+}
+/*没有数据*/
+.no-good{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    left:0;
+    top:50%;
+    margin-top:-150px;
+    padding:30px 10px 0 10px;
+    font-size: 16px;
+}
+.no-good > i{
+    display: inline-block;
+    width: 94px;
+    height: 105px;
+}
+.no-good > p{
+    color: #666;
+    margin-top: 10px;
+}
+.no-good > a {
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #dd0045;
+    margin-top: 30px;
+}
+/*dom-loading*/
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    width: 100px;
+    line-height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    height: 100px;
+    text-align: center;
+    z-index: 101;
+}
+.waiting{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    top: 50%;
+    line-height: 100px;
+}
+.waiting > i{
+    font-size: 14px;
+    display: inline-block;
+    animation: waiting 1s linear infinite;
+    -webkit-animation: waiting 1s linear infinite;
+}
+@-webkit-keyframes waiting {
+    0% {
+        -webkit-transform: scale(1);
+    }
+    100% {
+        -webkit-transform:scale(2);
+    }
+}
+@keyframes waiting {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+@-moz-keyframes circles-loader {
+    0% {
+        -moz-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+    50% {
+        -moz-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+}
+@-webkit-keyframes circles-loader {
+    0% {
+        -webkit-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+    50% {
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+}
+@keyframes circles-loader {
+    0% {
+        -moz-transform: rotate(-720deg);
+        -ms-transform: rotate(-720deg);
+        -webkit-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+    50% {
+        -moz-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        -webkit-transform: rotate(720deg);
+        transform: rotate(720deg);
+    }
+}
+/* :not(:required) hides this rule from IE9 and below */
+.circles-loader:not(:required) {
+    position: relative;
+    text-indent: -9999px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 204, 51, 0.9);
+    border-radius: 100%;
+    -moz-animation: circles-loader 3s infinite ease-in-out;
+    -webkit-animation: circles-loader 3s infinite ease-in-out;
+    animation: circles-loader 3s infinite ease-in-out;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.circles-loader:not(:required)::before {
+    background: rgba(255, 102, 0, 0.6);
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 18.75px;
+    left: -10.82532px;
+}
+.circles-loader:not(:required)::after {
+    background: rgba(255, 51, 0, 0.4);
+    border-radius: 100%;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 18.75px;
+    left: 10.82532px;
+}
+/*加载更多*/
+.loading-wraper{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.go-loading-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(http://s.hdour.com/images/loading.png) no-repeat;
+    background-size: contain;
+    margin-top: 6px;
+    vertical-align: top;
+    margin-left: 5px;
+    -moz-animation: loading 0.2s infinite linear;
+    -webkit-animation: loading 0.2s infinite linear;
+    animation: loading 0.2s infinite linear;
+
+}
+@-moz-keyframes loading {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+
+}
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+a.sold-out{
+    background-color: #ccc;
+}
+.li-sold-out{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50%;
+}
+/*是否为*/
+.is-concern-a{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.is-concern{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*z-index: 1;*/
+    background-color: #dd0045;
+    color: #fff;
+}
+.is-concern span{
+    display: inline-block;
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 8px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #7ebf42;
+    border-radius: 3px;
+}

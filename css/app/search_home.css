@@ -1,0 +1,75 @@
+@import "../base/base.css";
+@import "../moudle/app/search_plug.css";
+.search-list{
+    padding-left:1px;
+    /*margin-bottom:10px;*/
+    /*padding:10px 5px 5px 15px;*/
+}
+.search-list .hide{
+    display: none;
+}
+.search-list-title{
+    font-size: 0.875em;
+    padding:5px 0;
+}
+.hot-type-list{
+    /*margin-top:10px;*/
+}
+.hot-type-list > li{
+    width: 50%;
+    border-right:1px solid #f1f1ed;
+    border-bottom:1px solid #f1f1ed;
+    float:left;
+}
+.hot-type-list > li:nth-child(2n+2){
+    /*border-right:none;*/
+}
+.hot-type-list > li a{
+    position: relative;
+}
+.hot-type-list a > p{
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    top:80%;
+    left: 0;
+    margin-top:-10px;
+    color: #fff;
+}
+.hot-type-list .img{
+    /*background-color:#abadaf;*/
+}
+.hot-brand-list .img{
+    /*border-color:#eac2bd;*/
+}
+
+.hot-brand-list ul li{
+    width: 33.33333%;
+    border-right:1px solid #f1f1ed;
+    border-bottom:1px solid #f1f1ed;
+    float:left;
+}
+.hot-brand-list a{
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+}
+.hot-brand-list img{
+    min-height: 65px;
+}
+.hot-brand-list .img{
+    width: 100px;
+    height: 95px;
+    padding: 0;
+    min-height: 40px;
+}
+.hot-brand-list a > p{
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
