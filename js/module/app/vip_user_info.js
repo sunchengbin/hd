@@ -24,12 +24,12 @@ define(['zepto','config'],function(zepto,config){
                 _htm += '<li class="clearfix" id="'+user.childId+'">'
                     +'<img src="'+(user.portraitUrl?user.portraitUrl:config.IMGHOST+'images/icon/default_user.png')+'" class="fl"/>'
                     +'<div class="user-list-info" style="height: 40px;line-height: 40px;">'
-                    //+'<p>'
-                    //+(user.userName?user.userName:'游客')
-                    //+'</p>'
+                        //+'<p>'
+                        //+(user.userName?user.userName:'游客')
+                        //+'</p>'
                     +'<p class="clearfix">'
                     +(user.nickName?user.nickName:'游客')
-                    //+(user.orderCount?'订单数:'+user.orderCount:'')
+                        //+(user.orderCount?'订单数:'+user.orderCount:'')
                     +'<em class="fr price">消费金额:'+user.total+'</em>'
                     +'</p>'
                     +'</div>'

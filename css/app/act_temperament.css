@@ -34,10 +34,28 @@ html { font-size: 62.5%; }
 }
 .user-info{
     margin:10px 15px;
+    padding:10px;
     border:2px solid #fff;
     border-radius: 10px;
-    background-color:#dd0045;
+    background-color:#fff;
     overflow: hidden;
+    text-align: center;
+}
+.user-info img{
+    width:50%;
+    margin-bottom:5px;
+}
+.user-info p{
+    height: 20px;
+    line-height: 20px;
+    color: #dd0045;
+}
+.img-box img{
+    width: 45%;
+    float:left;
+}
+.img-box img:nth-child(2){
+    float:right;
 }
 /*未上传*/
 .user-logo{
@@ -121,7 +139,7 @@ html { font-size: 62.5%; }
     position: relative;
     border-radius: 10px;
     background-color: #fff;
-    padding:15px 15px 0;
+    padding:15px;
     margin:10px 12px;
 }
 .txt-cont span{

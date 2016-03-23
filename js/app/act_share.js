@@ -18,13 +18,14 @@ require(['zepto','token','dialog','config','base','fastclick','weixin','actconfi
                         _url_pid = base.others.getUrlPrem('pid'),
                         _pid = _url_pid?_url_pid:_self_id,
                         _share_url = _url_pid?location.href:location.href+'?pid='+_self_id,
+                        //_isself = 0,
                         _isself = !_url_pid || _url_pid == _self_id?1: 0,
                         _user_name = base.others.getUrlPrem('name')?base.others.getUrlPrem('name'):'我';
                     _this.getUserInfo(_pid,function(opts){
                         weixin.wxinit(function(){
                             weixin.updateShare({
-                                title: (_isself&&_user_info?JSON.parse(_user_info).user.nickName:_user_name)+'分享了"小白免税"送豪礼活动',
-                                desc: '分享关注都拿钱，轻松赚足50元',
+                                title: (_isself&&_user_info?(JSON.parse(_user_info).user&&JSON.parse(_user_info).user.nickName?JSON.parse(_user_info).user.nickName:'我'):_user_name)+'分享了"小白免税"送豪礼活动',
+                                desc: '呼朋唤友手一抖,轻松赚足50元',
                                 link: _share_url,
                                 imgUrl: opts.url,
                                 success: function() {
@@ -97,67 +98,54 @@ require(['zepto','token','dialog','config','base','fastclick','weixin','actconfi
             var _htm = '',
                 _this = this;
             _htm+='<img src="../../images/act/top_bg_one.png"/>';
-            _htm+='<div class="user-info clearfix">'
-                +'<div class="user-logo j_up_img">';
-            _htm+='<img class="j_a_img" src="'+(res.qrcodeUrl?res.qrcodeUrl:'../../images/act/no_img.png')+'"/>';
+            _htm+='<div class="user-info clearfix">';
             if(isself){
-                _htm+='<p>分享给好友</p>';
-                _htm+='<p>让她(他)送我1元红包</p>';
+                _htm += '<img class="j_a_img" src="'+(res.portraitUrl?res.portraitUrl:'../../images/act/no_img.png')+'"/>';
+                _htm += '<p>通过微信右上角的按钮分享到朋友圈</p>';
+                _htm += '<p>就送你五元消费红包</p>';
             }else{
-                _htm+='<p>长按识别二维码并关注</p>';
-                _htm+='<p>送她(他)1元消费红包</p>';
+                _htm += '<div class="img-box clearfix">';
+                _htm += '<img class="two-img" src="'+(res.qrcodeUrl?res.qrcodeUrl:'../../images/act/no_img.png')+'"/>';
+                _htm += '<img class="two-img" src="'+(res.portraitUrl?res.portraitUrl:'../../images/act/no_img.png')+'"/>';
+                _htm += '</div>';
+                _htm += '<p>长按扫描二维码并关注</p>';
+                _htm += '<p>即可送他(她)三元“小白免税”消费红包</p>';
             }
-            _htm+='</div><div class="user-rank">';
-            _htm+='<div class="user-rank-left user-rank-lefted">'
-                +'<img class="j_a_img" src="'+(res.portraitUrl?res.portraitUrl:'../../images/act/no_img.png')+'"/>'
-                + '</div>';
-            _htm+='<div class="user-rank-right">'
-                +_this.getTxtHtm(isself)
-                +'</div>'
-                +'</div>'
-                +'</div>';
-            if(!isself){
-                _htm+='<p class="i-join"><a href="act_share.html" class="">我也要参加</a></p>';
-            }
+            _htm+='</div>';
             if(res.childList && res.childList.length){
                 _htm+='<div class="txt-cont">'
-                    +'<p class="clearfix">'+(isself?'我':'她(她)')+'已经赚了'+res.childList.length+'元</p>'
+                    +'<p class="clearfix">'+(isself?'我':'她(她)')+'已经赚了'+(res.childList.length*3)+'元</p>'
                     +'<ul>'
                     +_this.getUsersList(res.childList,isself)
                     +'</ul>'
                     +'</div>';
             }
-            _htm+='<img src="../../images/act/act_list.png"/>'
-                +'<div class="txt-cont act-wraper">'
-                +'<span class="angle-s"></span>'
-                +'<div class="clearfix txt-d">'
-                +'<em class="">1</em>'
-                +'<p>小白免税,让你轻松购买,最全,最真的"棒子国"化妆品。</p>'
-                +'</div>'
-                +'<div class="clearfix txt-d">'
-                +'<em class="">2</em>'
-                +'<p>点击我要参加“分享到朋友圈或者直接分享给朋友”即可获得5元消费红包(第一次有效)，每邀请一个新用户扫描分享页面中的二维码即可获得1元消费红包，同时扫码好友产生消费后，还可以获得好友消费金额5%的消费红包。所有红包,全部存入账户余额。</p>'
-                +'</div>'
-                +'<div class="clearfix txt-d">'
-                +'<em class="">3</em>'
-                +'<p>关于账户余额查询,请进入“小白免税”公众号“商城首页”右下角的“我的”查看。</p>'
-                +'</div>'
-                +'<div class="clearfix txt-d">'
-                +'<em class="">4</em>'
-                +'<p>消费红包不设门槛，对应红包余额可直接用于减免小白免税消费金额，每人最高可得50元小白免税消费红包；消费红包仅用于在小白免税购物时直接抵用消费额，不兑现，不找零。</p>'
-                +'</div>'
-                +'<div class="clearfix txt-d">'
-                +'<em class="">5</em>'
-                +'<p>严禁使用各种购买手段参与活动作弊行为，一经发现，取消活动优惠资格。</p>'
-                +'</div>'
-                +'<p>长按识别二维码联系客服小白</p>'
-                +'<div class="wx-er">'
-                +'<img src="../../images/service/find_ser_er.jpg"/>'
-                +'</div>'
-                +'</div>';
-
+            if(isself){
+                _htm+='<img src="../../images/act/act_list.png"/>'
+                    +'<div class="txt-cont act-wraper">'
+                    +'<span class="angle-s"></span>'
+                    +'<div class="clearfix txt-d">'
+                    +'<em class="">1</em>'
+                    +'<p>通过微信右上角按钮分享本活动到朋友圈即可得五元“小白免税”消费红包。</p>'
+                    +'</div>'
+                    +'<div class="clearfix txt-d">'
+                    +'<em class="">2</em>'
+                    +'<p>好友通过你分享的页面扫描了二维码关注“小白免税”服务号，你即可得三元“小白免税”消费红包，最高可得45元小白免税消费红包。</p>'
+                    +'</div>'
+                    +'<div class="clearfix txt-d">'
+                    +'<em class="">3</em>'
+                    +'<p>你的好友在“小白免税”产生消费后，还可以获得好友消费金额的5%的消费红包，好友消费红包不设上限。</p>'
+                    +'</div>'
+                    +'<div class="clearfix txt-d">'
+                    +'<em class="">4</em>'
+                    +'<p>消费红包查看方式：进入“小白免税”服务号，点击“免税商城”，进入免税商城后，点击右下角“我的”按钮，即可在右上角看到你的“小白免税”账户余额。</p>'
+                    +'</div>'
+                    +'</div>';
+            }else{
+                _htm+='<p class="i-join"><a href="act_share.html" class="">我也要参加</a></p>';
+            }
             _htm+='<img src="../../images/act/about_top.png"/>'
-                +'<a class="block" href="http://s.hdour.com">'
+                +'<a class="block" href="http://s.hdour.com" style="margin: 10px 15px;">'
                 +'<img src="../../images/act/go_shop.png">'
                 +'</a>'
                 +'<p class="footer-p">活动最终解释权归北京海兜科技有限公司所有</p>';
@@ -180,7 +168,7 @@ require(['zepto','token','dialog','config','base','fastclick','weixin','actconfi
                         +(!isself?'':'<a href="act_share.html?pid='+item.childId+'&name='+encodeURIComponent(item.childName)+'" class="">')
                         +'<img src="'+(item.portraitUrl?item.portraitUrl:'../../images/service/ser1.jpg')+'"/>'
                         +'<div>'
-                        +'<p>'+(item.nickName?item.nickName:'神秘游客')+'<em class="fr">1元</em></p>'
+                        +'<p>'+(item.nickName?item.nickName:'神秘游客')+'<em class="fr">3元</em></p>'
                         +'</div>'
                         +(!isself?'':'</a>')
                         +'</li>';
@@ -198,8 +186,8 @@ require(['zepto','token','dialog','config','base','fastclick','weixin','actconfi
                     '</div>';
             }else{
                 _htm+='<p>长按识别二维码</p>' +
-                    '<p>关注送他1元消费红包</p>' +
-                    '<p>点击"我要参加"</p>' +
+                    '<p>关注送他3元消费红包</p>' +
+                    '<p>点击下方大按钮</p>' +
                     '<p>分享抢5元红包</p>' +
                     '</div>';
             }

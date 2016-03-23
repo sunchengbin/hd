@@ -142,9 +142,9 @@ require(['token','dialog','zepto','loading','homenav','lazyload','config','vipus
                 +'<a href="javascript:;" class="block act" data-type="1">'
                 +'<p class="">一级用户</p>'
                 +'</a>'
-                //+'<a href="javascript:;" class="block" data-type="2">'
-                //+'<p class="">二级用户</p>'
-                //+'</a>'
+                    //+'<a href="javascript:;" class="block" data-type="2">'
+                    //+'<p class="">二级用户</p>'
+                    //+'</a>'
                 +'</div>'
                 +'<ul class="info-tag clearfix">'
                 +'<li class="info-tag-l">'
@@ -157,7 +157,7 @@ require(['token','dialog','zepto','loading','homenav','lazyload','config','vipus
                 +'</li>'
                 +'<li>'
                 +'<p>下单人数</p>'
-                +'<p class="j_o_user_sum">'+(detail.firstOrderCount?detail.firstOrderCount:0)+'</p>'
+                +'<p class="j_o_user_sum">'+(detail.childList.length?detail.childList.length:0)+'</p>'
                 +'</li>'
                 +'</ul>';
             _htm += '<div class="j_user_lists">';
