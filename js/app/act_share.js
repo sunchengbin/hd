@@ -112,9 +112,13 @@ require(['zepto','token','dialog','config','base','fastclick','weixin','actconfi
                 _htm += '<p>即可送他(她)三元“小白免税”消费红包</p>';
             }
             _htm+='</div>';
+            var _money = res.childList.length*3;
+            if(_money > 45){
+                _money = 45;
+            }
             if(res.childList && res.childList.length){
                 _htm+='<div class="txt-cont">'
-                    +'<p class="clearfix">'+(isself?'我':'她(她)')+'已经赚了'+(res.childList.length*3)+'元</p>'
+                    +'<p class="clearfix">'+(isself?'我':'她(她)')+'已经赚了'+_money+'元</p>'
                     +'<ul>'
                     +_this.getUsersList(res.childList,isself)
                     +'</ul>'
@@ -168,7 +172,7 @@ require(['zepto','token','dialog','config','base','fastclick','weixin','actconfi
                         +(!isself?'':'<a href="act_share.html?pid='+item.childId+'&name='+encodeURIComponent(item.childName)+'" class="">')
                         +'<img src="'+(item.portraitUrl?item.portraitUrl:'../../images/service/ser1.jpg')+'"/>'
                         +'<div>'
-                        +'<p>'+(item.nickName?item.nickName:'神秘游客')+'<em class="fr">3元</em></p>'
+                        +'<p>'+(item.nickName?item.nickName:'神秘游客')+'<em class="fr">'+(i>14?0:3)+'元</em></p>'
                         +'</div>'
                         +(!isself?'':'</a>')
                         +'</li>';
