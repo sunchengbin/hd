@@ -157,11 +157,11 @@ require(['token','dialog','zepto','loading','homenav','lazyload','config','vipus
                 +'</li>'
                 +'<li>'
                 +'<p>下单人数</p>'
-                +'<p class="j_o_user_sum">'+(detail.childList.length?detail.childList.length:0)+'</p>'
+                +'<p class="j_o_user_sum">'+(detail.childList&&detail.childList.length?detail.childList.length:0)+'</p>'
                 +'</li>'
                 +'</ul>';
             _htm += '<div class="j_user_lists">';
-            _htm += vipuserinfo.getUserList(detail.childList);
+            _htm += (detail.childList?vipuserinfo.getUserList(detail.childList):'');
             _htm += '</div>';
             return _htm;
         },

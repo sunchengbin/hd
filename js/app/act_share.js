@@ -112,7 +112,7 @@ require(['zepto','token','dialog','config','base','fastclick','weixin','actconfi
                 _htm += '<p>即可送他(她)三元“小白免税”消费红包</p>';
             }
             _htm+='</div>';
-            var _money = res.childList.length*3;
+            var _money = res.childList?res.childList.length*3:0;
             if(_money > 45){
                 _money = 45;
             }
