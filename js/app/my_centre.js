@@ -1,9 +1,12 @@
 /**
  * Created by sunchengbin on 15/11/12.
  */
-require(['zepto','loading','token','dialog','config','lazyload','homenav','fastclick','cart'],function(zepto,loading,token,dialog,config,lazyload,homenav,fastclick,cart) {
+require(['zepto','loading','token','dialog','config','lazyload','homenav','fastclick','cart','weixin'],function(zepto,loading,token,dialog,config,lazyload,homenav,fastclick,cart,weixin) {
     var domloading = loading.domLoading();
     fastclick.attach(document.body);
+    if(!weixin.isWeixin) {
+        window.location.href = config.URLHOST+'offic_qrcode.html';
+    }
     var MC = {
         init : function(){
             var _this = this;

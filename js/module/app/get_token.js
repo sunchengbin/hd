@@ -12,9 +12,10 @@ define(['zepto','config','weixin','base','dialog','gotop'],function(zepto,config
             //localStorage.clear();
             //localStorage.setItem('TOKEN','32-a506-a36f103cd89d');
             //alert(localStorage.getItem('USERINFO'))
-            if(!weixin.isWeixin) {
-                location.href = config.NOWEIXINURL();
-                return false;
+            if(!weixin.isWeixin) {//非微信平台
+                opts.callback && opts.callback(opts);
+                //location.href = config.NOWEIXINURL();
+                //return false;
             }else{
                 if(opts.noToken){
                     if(!localStorage.getItem('TOKEN')){

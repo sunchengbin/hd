@@ -1,9 +1,12 @@
 /**
  * Created by sunchengbin on 15/11/7.
  */
-require(['cart','zepto','loading','token','homenav','lazyload','fastclick','dialog','config'],function(cart,zepto,loading,token,homenav,lazyload,fastclick,dialog,config){
+require(['cart','zepto','loading','token','homenav','lazyload','fastclick','dialog','config','weixin'],function(cart,zepto,loading,token,homenav,lazyload,fastclick,dialog,config,weixin){
     var domloading = loading.domLoading();
     fastclick.attach(document.body);
+    if(!weixin.isWeixin) {
+        window.location.href = config.URLHOST+'offic_qrcode.html';
+    }
     var SHOP_CART = {
         init : function(){
             var _this = this;

@@ -1,10 +1,13 @@
 /**
  * Created by sunchengbin on 15/11/5.
  */
-define(['dialog','cart','fastclick'],function(dialog,cart,fastclick){
+define(['dialog','cart','fastclick','weixin','config'],function(dialog,cart,fastclick,weixin,config){
     fastclick.attach(document.body);
     var BUY_PLUG = {
         init : function(good,callback){
+            if(!weixin.isWeixin) {
+                window.location.href = config.URLHOST+'offic_qrcode.html';
+            }
             var _dh = $(document).height(),
                 _wh = $(window).height(),
                 _ch = _dh > _wh?_dh:_wh,

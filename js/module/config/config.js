@@ -11,8 +11,8 @@ define([],function(){
         //本地测试
         //HOST : 'http://api.hdour.com', //action的请求域名
         //HOST : 'http://api.xbdfs.com', //action的请求域名
-        //IMGHOST:'http://127.0.0.1/hd/branches/shop/',
-        //URLHOST : 'http://127.0.0.1/hd/branches/shop/html/',
+        //IMGHOST:'http://127.0.0.1/hd-git/',
+        //URLHOST : 'http://127.0.0.1/hd-git/html/',
 
         //119.28.20.220测试服务器配置
         //HOST : 'http://api.xbdfs.com', //action的请求域名

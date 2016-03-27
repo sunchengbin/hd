@@ -1,0 +1,181 @@
+@import "../../base/base.css";
+@import "../../moudle/app/good_list.css";
+@import "../../moudle/app/search_plug.css";
+@import "../../moudle/app/buy_plug.css";
+
+.title{
+    padding:0 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top:10px;
+}
+.title > i.act,.title > em{
+    color:#dd0045;
+}
+.title > i{
+    font-size:20px;
+    line-height: 42px;
+    margin-left:10px;
+}
+.act-detail{
+    position: relative;
+}
+.act-detail img{
+    min-height: 100px;
+}
+.act-detail .img{
+    height: 205px;
+    padding-top:0;
+}
+.act-detail > i{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*详细内容列表*/
+.good-detail-lists{
+    /*margin:10px 10px 0;*/
+
+}
+.detail-wraper{
+    padding:18px 10px 0 10px;
+}
+.good-detail-lists > li{
+    margin-bottom:10px;
+    background-color: #fff;
+}
+.good-detail-lists > li:last-child{
+    border:none;
+}
+.good-imgs{
+    height: 100px;
+    background-color: #ccc;
+}
+.good-detail-lists .good-price em{
+    color:#dd0045;
+    float:none;
+    font-size:24px;
+}
+.good-detail-lists .good-price a{
+    display: inline-block;
+    padding:5px 15px;
+    font-size: 12px;
+    background-color: #dd0045;
+    color: #fff;
+    border-radius: 3px;
+    float:right;
+}
+.add-cart-btns{
+    padding:10px;
+    color: #666;
+    font-size: 12px;
+    border-top:1px solid #f1f1ed;
+}
+.add-cart-btns span{
+    margin-right:8px;
+}
+.good-detail-lists .good-price a i{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(../../../images/icon/addcart.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -4px;
+}
+.good-detail-lists .good-price em i{
+    font-size:16px;
+}
+.good-detail-lists .good-price span,.good-detail-lists .good-contrast-price > span{
+    color:#666;
+    font-size:12px;
+    margin-left:10px;
+}
+.good-detail-lists .good-contrast-price em{
+    text-decoration:line-through ;
+    color:#818181;
+}
+.good-detail-lists .good-description{
+    font-size: 14px;
+    line-height: 1.5;
+    padding:20px 0;
+    border-top:1px solid #f1f1ed;
+}
+.detail-wraper .good-price{
+    padding:20px 0 10px;
+    margin:0;
+}
+.good-detail-lists p.good-title{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom:15px;
+}
+.good-detail-lists .discount-msg span{
+    padding: 5px 5px;
+    color: #fff;
+    background-color: #8AC007;
+    margin-right: 10px;
+    font-size: 12px;
+    margin-bottom:5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.good-detail-lists > li div.add-cart-btns{
+    text-align: center;
+    padding-top:15px;
+}
+.add-cart-btns > a{
+    display: inline-block;
+    width:100%;
+    height: 26px;
+    line-height: 26px;
+    background-color: #fa501f;
+    color: #fff;
+    border-radius: 5px;
+
+}
+.good-detail-lists{
+    margin-top: 10px;
+}
+.list-img,.img-icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right:3px;
+}
+.list-img{
+    background: url(../../../images/icon/listimg.png) no-repeat;
+    background-size:contain;
+}
+.img-icon{
+    background: url(../../../images/icon/imglist.png) no-repeat;
+    background-size:contain;
+}
+.act .list-img{
+    background: url(../../../images/icon/listimged.png) no-repeat;
+    background-size:contain;
+}
+.act .img-icon{
+    background: url(../../../images/icon/imglisted.png) no-repeat;
+    background-size:contain;
+}
+.hide{
+    display: none;
+}
+.detail-des{
+    padding: 25px 10px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
