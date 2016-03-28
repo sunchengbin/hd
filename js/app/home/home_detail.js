@@ -286,7 +286,7 @@ require(['buyplug','token','dialog','zepto','loading','slide','homenav','lazyloa
                     _domestic = (_pric.domestic && _pric.domestic.price)?_pric.domestic:{symbol:'￥',price:_curRmb.price},
                     _gain = Number(_domestic.price - _curRmb.price);
                 _htm+='<li data-id="'+item.id+'">'
-                    +'<a class="block" href="good_detail.html?goodid='+item.id+'">';
+                    +'<a class="block" href="'+config.URLHOST+'good_detail.html?goodid='+item.id+'">';
                 if(item.isSoldOut == 'Y'){
                     _htm+='<div class="li-sold-out">已售罄</div>';
                 }
