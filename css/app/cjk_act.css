@@ -26,31 +26,32 @@ img{
 }
 .er-wei-ma{
     position: absolute;
-    width: 35%;
-    margin-left:-17.5%;
-    top:7rem;
-    left:50%;
+    width: 50%;
+    margin-left: -25%;
+    top: 15rem;
+    left: 50%;
     text-align: center;
-
 }
 .er-wei-ma p{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-top: .5rem;
 }
 .go-hd{
-    /* position: absolute; */
     bottom: 0;
     right: 0;
     display: block;
-    /* width: 10rem; */
     padding: 1rem;
-    /* height: 3rem; */
-    /* line-height: 3rem; */
     text-align: center;
     color: #fff;
     font-size: 2rem;
-    background-color: #dd0045;
+    background-color: #fff;
+}
+.go-hd img:nth-child(1){
+    width: 25%;
+}
+.go-hd img:nth-child(2){
+    width: 70%;
 }
 .log-div{
     position: absolute;
@@ -65,4 +66,12 @@ img{
     text-align: center;
     font-size: 1.4rem;
     color: #c47f79;
+}
+.go-hd-a{
+    display: block;
+    width: 70%;
+    height: 7rem;
+    position: absolute;
+    right: 0;
+
 }
