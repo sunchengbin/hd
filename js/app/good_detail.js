@@ -67,15 +67,6 @@ require(['token','dialog','zepto','loading','lazyload','slide','config','base','
                     id : base.others.getUrlPrem('goodid')
                 },
                 _action_url = config.HOST+config.ACTIONS.goodDetail+'?code='+_code+'&parentId='+_parentid+'&childId='+_childid;
-            //if(_code){
-            //    _data.code = _code;
-            //}
-            //if(_parentid){
-            //    _data.parentId = _parentid;
-            //}
-            //if(_childid){
-            //    _data.childId = _childid;
-            //}
             $.ajax({
                 url : _action_url,
                 type : 'post',
@@ -133,7 +124,8 @@ require(['token','dialog','zepto','loading','lazyload','slide','config','base','
                     }
                 },
                 error : function(){
-                    window.location.reload();
+                    //window.location.reload();
+                    _this.getGoodInfo(callback);
                 }
             });
         },
